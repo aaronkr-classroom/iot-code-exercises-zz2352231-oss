@@ -77,3 +77,18 @@ print(item)
 #리스트 슬라이싱
 sub_list_1 = my_list[1:3]
 print(sub_list)
+
+for i in range(6,15, 2):
+    my_list.append(i * 10)
+    print(my_list)
+
+sub list_2 = my_list[4:]
+sub_list_3 = my_list[:4]
+sub_list_4 = my_list[2:8:2]
+sub_list_5 = my_list[::]
+
+print(f"s2: {sub_list_2}")
+print(f"s3: {sub_list_3}")
+print(f"s4: {sub_list_4}")
+print(f"s5: {sub_list_5}")
+
