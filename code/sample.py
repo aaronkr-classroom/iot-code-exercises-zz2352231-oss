@@ -110,3 +110,15 @@ my_color= [
 ]
 for color in my_colors:
     print(color)
+
+
+
+dick_ply
+famous_ppl
+2{
+"name"; "이순신",
+"job":"장군"
+printf(famous_ppl)
+printf(famous_ppl[1]["name"])
+#1은 key임
+
