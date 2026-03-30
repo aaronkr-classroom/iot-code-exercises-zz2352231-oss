@@ -40,10 +40,17 @@ print('-' * n)
 print(fmt0.format('~a'),fmt1.format(~a%0xff,~a%0xff,~a%0xff))
 
 # bit 왼쪽 쉬프트<<
-print("\nbit not ~")
+print("\nbit 왼쪽쉬프트 <<")
 print(fmt0.format('a'),fmt1.format(a,a,a))
 
 print('-' * n)
 
-print(fmt0.format('a << 2'),fmt1.format(~a<< 2,~a<< 2,~a<< 2))
+print(fmt0.format('a << 2'),fmt1.format(a<< 2,a<< 2,a<< 2))
 
+# bit 오른쪽 쉬프트>>
+print("\nbit 오른쪽 쉬프트 >>")
+print(fmt0.format('a'),fmt1.format(a,a,a))
+
+print('-' * n)
+
+print(fmt0.format('a >> 2'),fmt1.format(a>>2,a>> 2,a>> 2))
