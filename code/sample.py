@@ -122,3 +122,24 @@ printf(famous_ppl)
 printf(famous_ppl[1]["name"])
 #1은 key임
 
+
+#3_set.py
+# 두 집합 정의
+set1= {1,2,3,'a', "hello"}
+set2 ={"hello",3,4,5,'b'}
+
+#합집합(union)
+union_set= set1 | set2 #c에서 ||=or,py에서 or
+#교집합(intersection)
+int_set = set1&set2# &&=and
+
+#차집합
+dift=set1 -set2
+#대칭차집합
+symmetric dift= set1^set2 #합집합와 교집합의 차집합
+
+print('union', union_set)
+print(f"intersection: {int_set}")
+print(f"intersection: {int_set}")
+
+
