@@ -87,3 +87,21 @@ print(f"my new car is a {car}!")
 
 for price in prices:
 printf(f"IT COST ${PRICE},000!")
+
+
+#5_func.py
+
+def return_info(name, phone, address, emaill);
+(contact_info = f'연락처: {phone}\n 이메일: {email}"
+return f"이름:\t{name}\n{contaxt_info}\n주소:\t{address}"
+def print_info(name, phone, address, email="");
+print(f"이름:name\n {contact_info}\n주소:{address}")
+print_infi("aaron","010-5555", "전주")
+
+person = returninfo(
+email="sjsj@.Gmail.com",phone="010-388",address="교통대",name="aaron")
+
+print()
+print(person)
+
+
