@@ -1,0 +1,12 @@
+# main.py
+
+from device import sensor device, actuatordevice
+
+  sensor = sensordevice("temp sensor")
+  actuator = actuatordevice("led controller")
+
+  sensor.connect()
+  actuator.connect()
+
+  print (sensor.status())
+  print (actuator.status())
