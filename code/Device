@@ -46,7 +46,14 @@ def read(self) -> float:
 """ 가짜 온도 값을 반환"""  
 return round(random.uniform (20.0 ,30.0),2)
 
+class lightsensor(sensordevice):
+"""
+빛 센서 시뮬레이션
+"""
+return round(random.uniform(0.100)
+
 
 
 def status(self) ->str:
 return "performing action"
+ 
