@@ -1,0 +1,32 @@
+# device.py
+class device:
+"""
+base iot device
+기반 사물인터넷 장치
+"""
+ def_init_(self,name:str) -> none:
+self.name =name
+def_connect(self)-> none:
+print(f"{self.name} connecting...:)
+
+def status(self) -> str:
+return "unknown"
+
+class sensordevice(device):
+
+"""
+a device that reads data.
+데이터를 읽을 수 있는 장치.
+"""
+
+def status(self) -> str:
+ return "reading data...."
+
+class actuatordevice(device)
+"""
+a device that performs actions.
+작동할 수 있는 장치
+""""
+
+def status(self) ->str:
+return "performing action"
