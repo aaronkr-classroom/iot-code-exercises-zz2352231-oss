@@ -114,9 +114,18 @@ def speak(self):
 pass# 자식 클래스에서 구현
 
 def setname(self, name): #셋터 메소드 = 재정의
+"""
+setthe animal class's name
+animal 클래스의 이름을 재정의하는 한수
+:param name:새로운 animal의 이름
+"""
 self.name = name
 
-def getname(self, name): #겟터 메소드= 속성젼환
+def getname(self, name:str)->str #겟터 메소드= 속성젼환
+"""
+return the animal class's name
+animal 클래스의 이름을 잔환하는 한수
+:return: animal의 이름
 return.self=name
 
 class dog(animal): #is-a 관계(자식)
