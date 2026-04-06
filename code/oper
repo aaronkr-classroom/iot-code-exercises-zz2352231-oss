@@ -104,4 +104,28 @@ email="sjsj@.Gmail.com",phone="010-388",address="교통대",name="aaron")
 print()
 print(person)
 
+#5_class.py
 
+class animal:
+def_init_(self,name):
+self.name =name
+
+def speak(self):
+pass# 자식 클래스에서 구현
+
+class dog(animal): #is-a 관계(자식)
+def_init_(self,name,age):
+super()._init(name)
+self.age=age has-a속성
+
+def speak(self):
+print(f"my name is{self.name}!")
+
+class cat(animal):
+def speak(self):
+print(f"{self.name} says mewow")
+
+#호출
+my_dog =dog("spot",12)
+my_cat=("headache")
+my_
