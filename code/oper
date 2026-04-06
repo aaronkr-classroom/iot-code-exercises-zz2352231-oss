@@ -113,6 +113,12 @@ self.name =name
 def speak(self):
 pass# 자식 클래스에서 구현
 
+def setname(self, name): #셋터 메소드 = 재정의
+self.name = name
+
+def getname(self, name): #겟터 메소드= 속성젼환
+return.self=name
+
 class dog(animal): #is-a 관계(자식)
 def_init_(self,name,age):
 super()._init(name)
