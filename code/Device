@@ -21,12 +21,32 @@ a device that reads data.
 
 def status(self) -> str:
  return "reading data...."
+def read(self) -> float:
+""" 가짜 온도 값을 반환"""  
+return 0.0
+
 
 class actuatordevice(device)
 """
 a device that performs actions.
 작동할 수 있는 장치
 """"
+
+def status(self) -> str:
+return"performing action..."
+
+class temperaturesensor(sensordevice):
+"""
+온도 시물리이션 센서
+""::
+def_init_(self, name:str)-> str
+super()._init_(name)
+
+def read(self) -> float:
+""" 가짜 온도 값을 반환"""  
+return round(random.uniform (20.0 ,30.0),2)
+
+
 
 def status(self) ->str:
 return "performing action"
