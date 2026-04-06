@@ -10,3 +10,10 @@ from device import sensor device, actuatordevice
 
   print (sensor.status())
   print (actuator.status())
+print()
+
+temp = temperaturesensor("temp1")
+light = lightsensor("light1")
+
+print("temp: , temp.read())
+print("light: , light.read())
