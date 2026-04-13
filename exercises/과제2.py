@@ -54,3 +54,49 @@ while True:
         
     except ValueError:
         print("숫자 세 개를 공백으로 구분하여 입력해주세요 ")
+
+
+class SayDays:
+    def __init__(self, year, month, day):
+        self.year = year
+        self.month = month
+        self.day = day
+
+def is_leap_year(self);
+#윤년 여부 확인
+y= self.year
+return (y%4 ==0 and y% 100!=0) or 
+(y%400 ==0)) #discuss = true, 평년= false
+
+def days();
+def_in_month = [
+ def31,self.is_leep(),31,30.31,30,31,31,30,31,30,31]
+total = 0
+m= 0
+while m < self.month:
+    total += days_in_month[m]
+    m+= 1
+
+total += self.day #13
+return total 
+
+total =sum (days_in_month[:self.month -1]+ self.day
+            return total 
+            
+def days_left(self);#년에 남은 일수(12월31일 기준)
+#12월31일까지 남은 날짜
+total_days = 366 if self.is_leap() else 365
+return total_days - self.days()
+def weekday();#숫자로 요일을 알려줌
+#zeller 공식으로 요일 계산... 어려워서 나중에
+
+def weekday_name(); #0 >토요일 매핑
+#요일 이름 반환 
+names = [
+    "토요일","일요일","월요일"
+
+
+
+    
+
+
