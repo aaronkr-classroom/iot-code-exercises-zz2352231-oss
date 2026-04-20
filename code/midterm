@@ -1,0 +1,82 @@
+class RoomSensor:
+    def __init__(self, name, temperature, humidity, light):
+        # Initializing the four variables through the constructor
+        self.name = name
+        self.temperature = temperature
+        self.humidity = humidity
+        self.light = light
+
+class SmartSensor:
+    def __init__(self, name, temp, hum, light):
+        self.name = name
+        self.temp = temp
+        self.hum = hum
+        self.light = light
+
+    def show_info(self):
+        print(f"Sensor: {self.name}")
+        print(f"Temperature: {self.temp}")
+        print(f"Humidity: {self.hum}")
+        print(f"Light: {self.light}")
+    def comfort_level(self):
+        # Comfortable 조건: 온도가 20~26도 사이 AND 습도가 40~60 사이
+        if 20 <= self.temp <= 26 and 40 <= self.hum <= 60:
+            return "Comfortable"
+        
+        elif self.temp >= 30 or self.hum >= 70:
+            return "Warning"
+      
+        else:
+            return "Normal"
+
+    if sensor["light"] < 200:
+        light_status = "Dark"
+    else:
+        light_status = "Bright"
+
+room_sensors = []
+
+kitchen = RoomSensor("Kitchen", 24.5)
+bedroom = RoomSensor("Bedroom", 21.0)
+balcony = RoomSensor("Balcony", 18.2)
+
+room_sensors.append(kitchen)
+room_sensors.append(bedroom)
+room_sensors.append(balcony)
+
+for sensor in room_sensors:
+    print(f"위치: {sensor.name}, 현재 값: {sensor.value}")
+
+sensors = [
+    {
+        "name": "Kitchen",
+        "temperature": 31,
+        "humidity": 72,
+        "light": 180
+    },
+    {
+        "name": "Living Room",
+        "temperature": 24,
+        "humidity": 45,
+        "light": 500
+    }
+]
+
+for sensor in sensors:
+    if sensor["temperature"] > 30 or sensor["humidity"] > 70:
+        comfort_level = "Warning"
+    else:
+        comfort_level = "Good"
+
+    if sensor["light"] < 200:
+        light_status = "Dark"
+    else:
+        light_status = "Bright"
+
+    print(f"Sensor: {sensor['name']}")
+    print(f"Temperature: {sensor['temperature']}")
+    print(f"Humidity: {sensor['humidity']}")
+    print(f"Light: {sensor['light']}")
+    print(f"Comfort Level: {comfort_level}")
+    print(f"Light Status: {light_status}")
+    print("-" * 20)  # Separator for readability
